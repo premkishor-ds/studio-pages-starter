@@ -1,6 +1,14 @@
 {
   "features": [
     {
+      "name": "faq",
+      "streamId": "studio-stream-id",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
+    },
+    {
       "name": "product",
       "streamId": "skis",
       "templateType": "JS",
@@ -11,21 +19,37 @@
   ],
   "streams": [
     {
+      "$id": "studio-stream-id",
+      "localization": {
+        "locales": [
+          "en_GB"
+        ],
+        "primary": false
+      },
+      "filter": {
+        "entityTypes": [
+          "faq"
+        ]
+      },
+      "fields": [
+        "slug"
+      ]
+    },
+    {
       "$id": "skis",
       "filter": {
         "entityTypes": [
-          "ce_product"
+          "product"
         ]
       },
       "localization": {
         "locales": [
-          "en"
+          "en_GB"
         ],
         "primary": false
       },
       "fields": [
         "name",
-        "c_price",
         "description",
         "photoGallery",
         "slug"

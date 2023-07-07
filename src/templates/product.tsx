@@ -22,9 +22,9 @@ import "../index.css";
 export const config: TemplateConfig = {
   stream: {
     $id: "skis",
-    filter: { entityTypes: ["ce_product"] },
-    localization: { locales: ["en"], primary: false },
-    fields: ["name", "c_price", "description", "photoGallery", "slug"],
+    filter: { entityTypes: ["product"] },
+    localization: { locales: ["en_GB"], primary: false },
+    fields: ["name", "description", "photoGallery", "slug"],
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
